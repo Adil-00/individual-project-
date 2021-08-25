@@ -1,0 +1,67 @@
+.header {
+  background: url("https://phonoteka.org/uploads/posts/2021-04/1619505932_12-phonoteka_org-p-fon-dlya-pitstserii-12.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+}
+.header_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+}
+.logo {
+  width: 20vw;
+}
+
+.header_btn {
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background: rgb(0, 0, 0, 0.2);
+  color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+
+.email-user {
+  padding: 20px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background: rgb(0, 0, 0, 0.2);
+  color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 20px white;
+  cursor: pointer;
+}
+
+.header_more_btn {
+  display: none !important;
+}
+
+@media all and (max-width: 1080px) {
+  .header_more_btn {
+    display: block !important;
+  }
+
+  .logo {
+    width: 30vw;
+    height: 20vh;
+  }
+
+  .header_btn {
+    display: none;
+  }
+
+  .email-user {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.MuiPaginationItem-root {
+  color: white !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  text-shadow: 0 0 10px black !important;
+}
+.MuiPaginationItem-outlinedPrimary.Mui-selected {
+  color: white !important;
+  background-color: rgb(0 0 0 / 78%) !important;
+}

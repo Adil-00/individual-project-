@@ -1,0 +1,24 @@
+.footer {
+  background: url("https://www.coalco.es/wp-content/uploads/2013/05/pattern9.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.footer_content {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.col span {
+  color: white;
+  font-size: 18px;
+  margin: 5px;
+}

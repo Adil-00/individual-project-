@@ -1,0 +1,42 @@
+.navigation {
+  display: flex;
+  background: url("https://sun9-3.userapi.com/impf/ZIK1VUI5coQ03uHHZw0qNyqZKU3aJBMjLEN_3Q/90pM5bv8pPY.jpg?size=1590x400&quality=95&crop=0,0,1590,400&sign=8999b0ee46e4d0e0c34271574711f27a&type=cover_group")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+.navigation::-webkit-scrollbar {
+  width: 18px;
+}
+
+.navigation::-webkit-scrollbar-track {
+  background: rgb(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.navigation::-webkit-scrollbar-thumb {
+  height: 12px;
+  background: rgba(119, 77, 22, 0.644);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(68, 177, 122) inset;
+}
+.nav {
+  width: 300px;
+  height: 100px;
+  background-color: rgb(0, 0, 0, 0.1);
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 60px;
+  font-weight: 700;
+  border: 1px solid black;
+  cursor: pointer;
+  text-shadow: 0 0 20px black;
+  flex: 0 0 auto;
+}
+
+.nav:hover {
+  text-shadow: 0 0 10px #fb8906, 0 0 20px #fb8906, 0 0 30px#fb8906,
+    0 0 40px #06f9fb;
+  transition: 0.1s;
+}

@@ -1,0 +1,61 @@
+.creditCard {
+  background: url("https://static3.bigstockphoto.com/1/1/2/large1500/211568878.jpg")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.creditCard_content {
+  background: rgba(0, 0, 0, 0.301);
+  border-radius: 18px;
+  box-shadow: 0 0 100px black;
+  width: 60vw;
+  height: 80vh;
+}
+
+.creditCard_content_row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+input {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+input::-webkit-input-placeholder {
+  color: white;
+}
+
+.credit_inp_box {
+  box-shadow: 0 0 50px black;
+  padding: 10px;
+  margin: 8px;
+  border-radius: 10px;
+}
+
+.credit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3vh;
+}
+
+.content {
+  margin-top: 10vh;
+}
+
+Link {
+  text-decoration: none;
+}

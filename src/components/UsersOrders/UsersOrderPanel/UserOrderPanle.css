@@ -1,0 +1,48 @@
+.personal_account {
+  height: 20vh;
+  display: flex;
+  justify-content: space-evenly;
+  display: flex;
+  background: url("https://sun9-3.userapi.com/impf/ZIK1VUI5coQ03uHHZw0qNyqZKU3aJBMjLEN_3Q/90pM5bv8pPY.jpg?size=1590x400&quality=95&crop=0,0,1590,400&sign=8999b0ee46e4d0e0c34271574711f27a&type=cover_group")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.personal_account_nav {
+  width: auto;
+  height: 100%;
+  padding: 5px;
+  background-color: rgb(0, 0, 0, 0.1);
+  color: rgba(250, 250, 250, 0.8);
+  font-size: 60px;
+  font-weight: 700;
+  border: 1px solid black;
+  cursor: pointer;
+  text-shadow: 0 0 20px black;
+  flex: 0 0 auto;
+  box-shadow: 0 0 10px black, 0 0 30px black, 0 0 50px black;
+}
+
+.personal_account_nav:hover {
+  text-shadow: 0 0 10px #fb8906, 0 0 20px #fb8906, 0 0 30px#fb8906,
+    0 0 40px #06f9fb;
+  transition: 0.1s;
+}
+
+.personal_account_link {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+@media all and (max-width: 1080px) {
+  .personal_account {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal_account_nav {
+    font-size: 36px;
+  }
+}

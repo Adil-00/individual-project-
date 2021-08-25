@@ -1,0 +1,108 @@
+.registration {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://kartinkin.com/uploads/posts/2021-03/1617152097_21-p-sushi-pitstsa-krasivo-26.jpg")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.registration_title {
+  color: white;
+  text-shadow: 0 0 10px rgb(187, 86, 3), 0 0 30px rgb(187, 86, 3),
+    0 0 50px rgb(187, 86, 3);
+  font-size: 36px;
+  font-weight: 800;
+}
+.registration_form {
+  background-color: rgb(0, 0, 0, 0.5);
+  height: 60vh;
+  width: 50vw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 0 0 30px black;
+}
+
+.registration_inp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30vw;
+}
+
+.reg-inp {
+  margin: 10px;
+  width: 100%;
+  border-radius: 8px;
+  padding: 0 15px;
+  border-bottom: 2px solid rgba(44, 165, 7, 0.685);
+}
+
+.reg-inp2 {
+  line-height: 40px;
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  font-size: 25px;
+  color: white;
+}
+
+.reg-inp2::placeholder {
+  color: white;
+  text-align: center;
+}
+
+.registration_btn {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.reg-btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: none;
+  border-bottom: 2px solid rgb(255, 136, 0);
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+.reg-warning {
+  font-size: 18px;
+  font-weight: 700;
+  text-shadow: 0 0 10px black;
+  color: red;
+}
+
+.login_error_text {
+  color: red;
+  padding: 5px;
+  background-color: black;
+  font-size: 18px;
+}
+
+@media all and (max-width: 1080px) {
+  .registration_form {
+    width: 80vw;
+  }
+  .registration_title {
+    font-size: 26px;
+  }
+
+  .registration_inp {
+    width: 50vw;
+  }
+
+  .reg-inp2 {
+    line-height: 30px;
+    font-size: 18px;
+  }
+}

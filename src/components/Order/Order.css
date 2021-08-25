@@ -1,0 +1,220 @@
+.order {
+  height: 100vh;
+  background: url("https://pizzeriamax.adaptee.cz/images/gastro/bck/adaptee_pizza-1.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+
+.order_content {
+  width: 80vw;
+  height: 90vh;
+  background: rgba(0, 0, 0, 0.644);
+  box-shadow: 0 0 50px black;
+  border-radius: 10px;
+}
+
+.order_content_row {
+  display: flex;
+}
+
+.order_content_img {
+  height: 30vh;
+  width: 20vw;
+  background-size: contain !important;
+  background-position: center !important;
+}
+
+.order_content_col2 {
+  width: 50%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.order_text {
+  font-size: 30px;
+  margin: 5px;
+  color: white;
+}
+
+.order_content_col_left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 50%;
+  padding-left: 5vh;
+}
+
+.order_exit-btn {
+  color: white;
+  padding: 10px 0 0 10px;
+}
+
+.order_btn-exit {
+  cursor: pointer;
+}
+
+.order_box_btn_order {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.order_btn_order {
+  padding: 10px 25px;
+  color: white;
+  background: none;
+  border: none;
+  box-shadow: 0 0 20px white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 22px;
+}
+.order_counter {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.order_counter_btn {
+  width: 50px;
+  height: 50px;
+  font-size: 36px;
+  color: white;
+  background: none;
+  border: none;
+  box-shadow: 0 0 20px white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.order_quantity_box {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0 0 20px white;
+  border-radius: 8px;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.order_counter_quantity {
+  color: white;
+  font-size: 30px;
+}
+
+.order_content_col_right {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inp_data {
+  width: 300px;
+  line-height: 30px;
+  font-size: 18px;
+  color: white;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.user_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.box_inp_data {
+  padding: 8px;
+  box-shadow: 0 0 20px white;
+  border-radius: 10px;
+  margin: 25px;
+}
+
+.user_title_data {
+  font-size: 36px;
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.text_error {
+  font-size: 26px;
+  color: red;
+  text-align: center;
+}
+
+.order_content_row {
+  display: flex;
+}
+
+.oreder_box_btn_order {
+  display: flex;
+  justify-content: center;
+}
+
+.oreder_btn_order {
+  padding: 10px 25px;
+  color: white;
+  background: none;
+  border: none;
+  box-shadow: 0 0 20px white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 22px;
+  margin: 20px;
+}
+
+@media all and (max-width: 1080px) {
+  .order_content_img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .inp_data {
+    width: 180px;
+    font-size: 15px;
+  }
+
+  .box_inp_data {
+    width: 200px;
+  }
+
+  input::placeholder {
+    font-size: 12px;
+  }
+
+  .order_content_row {
+    flex-direction: column;
+  }
+
+  .order_content_col_right {
+    width: 100%;
+  }
+
+  .order_content_col_left {
+    width: 100%;
+    padding: 0;
+    height: auto;
+  }
+
+  .order {
+    height: auto;
+  }
+
+  .order_content {
+    height: auto;
+  }
+}

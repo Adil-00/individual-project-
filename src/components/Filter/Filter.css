@@ -1,0 +1,29 @@
+.filter {
+  background: url("https://i1.wallbox.ru/wallpapers/main2/201711/148992223758ce68bd6a4575.55985430.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: none;
+}
+
+.inp {
+  border: none;
+  background: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  padding: 0;
+  width: 0;
+}
+
+.box {
+  box-shadow: 0 0 10px black, 0 0 30px white, 0 0 50px black;
+}
+.box:hover .inp {
+  width: 240px;
+  transition: 0.3s;
+}
+
+.inp::placeholder {
+  text-align: center;
+}

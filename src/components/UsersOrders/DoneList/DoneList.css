@@ -1,0 +1,27 @@
+.UserReceiptsList {
+  background: url("https://pbs.twimg.com/media/EW7zB9JWsAAG4AV.jpg:large")
+    no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  height: auto;
+}
+
+.UserReceiptsList_content {
+  background-color: rgba(0, 0, 0, 0.3);
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media all and (max-width: 1080px) {
+  .UserReceiptsList {
+    height: auto;
+  }
+
+  .UserReceiptsList_content {
+    height: auto;
+  }
+}

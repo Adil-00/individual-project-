@@ -1,0 +1,87 @@
+.Payment {
+  background: url("https://phonoteka.org/uploads/posts/2021-05/1620939475_22-phonoteka_org-p-fon-dlya-menyu-sushi-rolli-25.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payment_logo {
+  background: url("../img/logo/logoPayment.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 20vw;
+  height: 20vh;
+}
+
+.Payment_content {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 50vw;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 0 100px black;
+}
+
+.payment_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.payment_slogan {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.payment_title {
+  font-size: 36px;
+  font-weight: 700;
+  color: white;
+}
+
+.payment_desc {
+  font-size: 26px;
+  color: white;
+  text-align: center;
+}
+
+.payment_btn {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 20px white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.payment-btn {
+  font-size: 42px;
+  background: none;
+  border: none;
+  color: white;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+@media all and (max-width: 1080px) {
+  .payment-btn {
+    font-size: 32px;
+  }
+
+  .payment_btn {
+    width: 100px;
+  }
+
+  .payment_desc {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,288 @@
+{
+  "done": [],
+  "userOrder": [],
+  "users": [
+    {
+      "login": "adil@gmail.com",
+      "favorite": [
+        {
+          "title": "Суши",
+          "commit": [],
+          "like": [],
+          "category": "суши",
+          "weight": "400",
+          "price": "250",
+          "calories": "300",
+          "structure": "Ролл с болгарским перцем, Состав: Ролл с помидором, авокадо, помидором , нежным сыром,",
+          "image": "https://i.ya-webdesign.com/images/png-sushi-2.png",
+          "id": 2
+        },
+        {
+          "title": "Чисбургер",
+          "commit": [],
+          "like": [],
+          "category": "бургеры",
+          "weight": "200",
+          "price": "150",
+          "calories": "500",
+          "structure": "котлета, помидор, огурцы, овощной салат",
+          "image": "https://im0-tub-ru.yandex.net/i?id=c7cc634bffe4f53a16bfc8688c95898a&n=13",
+          "id": 3
+        },
+        {
+          "title": "криветки",
+          "commit": [],
+          "like": [],
+          "category": "ужин",
+          "weight": "200",
+          "price": "600",
+          "calories": "450",
+          "structure": "криветки, рис, жаренная картошка ",
+          "image": "https://www.seekpng.com/png/full/74-747466_food.png",
+          "id": 4
+        }
+      ],
+      "cheque": [
+        {
+          "user": "adil@gmail.com",
+          "id": 1629829920817,
+          "userData": {
+            "userName": "adil",
+            "userAdres": "bokunov",
+            "userNumber": "996700000000"
+          },
+          "order": "картошка",
+          "time": "Aug 24 2021 21:31:46",
+          "price": "500",
+          "totalPrice": 500,
+          "quantity": 1
+        },
+        {
+          "user": "adil@gmail.com",
+          "id": 1629830586155,
+          "userData": {
+            "userName": "adil",
+            "userAdres": "bokunov",
+            "userNumber": "996000000000"
+          },
+          "order": "картошка",
+          "time": "Aug 24 2021 21:42:57",
+          "price": "500",
+          "totalPrice": 1500,
+          "quantity": 3
+        },
+        {
+          "user": "adil@gmail.com",
+          "id": 1629833115615,
+          "userData": {
+            "userName": "adil",
+            "userAdres": "bokunov",
+            "userNumber": "996000000000"
+          },
+          "order": "картошка",
+          "time": "Aug 24 2021 22:25:05",
+          "price": "500",
+          "totalPrice": 500,
+          "quantity": 1
+        },
+        {
+          "user": "adil@gmail.com",
+          "id": 1629833139149,
+          "userData": {
+            "userName": "adil",
+            "userAdres": "bokunov",
+            "userNumber": "996486854684"
+          },
+          "order": "суши ",
+          "time": "Aug 24 2021 22:25:27",
+          "price": "300",
+          "totalPrice": 1200,
+          "quantity": 4
+        }
+      ],
+      "password": "123",
+      "id": 1
+    },
+    {
+      "login": "admin@gmail.com",
+      "favorite": [],
+      "cheque": [],
+      "password": "admin",
+      "id": 2
+    },
+    {
+      "login": "nurs@gmail.com",
+      "favorite": [
+        {
+          "title": "картошка",
+          "commit": [],
+          "like": [
+            {
+              "login": "adil@gmail.com",
+              "favorite": [
+                {
+                  "title": "картошка",
+                  "commit": [],
+                  "like": [],
+                  "category": "пиццы",
+                  "weight": "500",
+                  "price": "500",
+                  "calories": "500",
+                  "structure": "500",
+                  "image": "https://grillhouse.villa-classic.ru/img/22021817.png",
+                  "id": 1,
+                  "login": "adil@gmail.com",
+                  "favorite": [],
+                  "cheque": [],
+                  "password": "123"
+                }
+              ],
+              "cheque": [],
+              "password": "123",
+              "id": 1
+            }
+          ],
+          "category": "пиццы",
+          "weight": "500",
+          "price": "500",
+          "calories": "500",
+          "structure": "500",
+          "image": "https://grillhouse.villa-classic.ru/img/22021817.png",
+          "id": 1,
+          "login": "adil@gmail.com",
+          "favorite": [],
+          "cheque": [],
+          "password": "123"
+        },
+        {
+          "title": "суши ",
+          "commit": [],
+          "like": [
+            {
+              "login": "adil@gmail.com",
+              "favorite": [
+                {
+                  "title": "картошка",
+                  "commit": [],
+                  "like": [],
+                  "category": "пиццы",
+                  "weight": "500",
+                  "price": "500",
+                  "calories": "500",
+                  "structure": "500",
+                  "image": "https://grillhouse.villa-classic.ru/img/22021817.png",
+                  "id": 1,
+                  "login": "adil@gmail.com",
+                  "favorite": [],
+                  "cheque": [],
+                  "password": "123"
+                },
+                {
+                  "title": "суши ",
+                  "commit": [],
+                  "like": [],
+                  "category": "суши",
+                  "weight": "250",
+                  "price": "300",
+                  "calories": "320",
+                  "structure": "рис, огурцы. ",
+                  "image": "https://japanomama26.ru/image/dost1.jpg",
+                  "id": 2
+                }
+              ],
+              "cheque": [],
+              "password": "123",
+              "id": 1
+            }
+          ],
+          "category": "суши",
+          "weight": "250",
+          "price": "300",
+          "calories": "320",
+          "structure": "рис, огурцы. ",
+          "image": "https://japanomama26.ru/image/dost1.jpg",
+          "id": 2
+        }
+      ],
+      "cheque": [],
+      "password": "123",
+      "id": 3
+    },
+    {
+      "login": "personal@mail.com",
+      "favorite": [],
+      "cheque": [],
+      "password": "123",
+      "id": 4
+    },
+    {
+      "login": "personal@gmail.com",
+      "favorite": [],
+      "cheque": [],
+      "password": "123",
+      "id": 5
+    }
+  ],
+  "dishes": [
+    {
+      "title": "пицца",
+      "commit": [],
+      "like": [
+        {
+          "id": 1
+        }
+      ],
+      "category": "пиццы",
+      "weight": "200",
+      "price": "400",
+      "calories": "1200",
+      "structure": "Маргарита Соус томатный, сыр Моцарелла, помидоры",
+      "image": "https://clipart-best.com/img/pizza/pizza-clip-art-2.png",
+      "id": 1
+    },
+    {
+      "title": "Суши",
+      "commit": [],
+      "like": [],
+      "category": "суши",
+      "weight": "400",
+      "price": "250",
+      "calories": "300",
+      "structure": "Ролл с болгарским перцем, Состав: Ролл с помидором, авокадо, помидором , нежным сыром,",
+      "image": "https://i.ya-webdesign.com/images/png-sushi-2.png",
+      "id": 2
+    },
+    {
+      "title": "Чисбургер",
+      "commit": [],
+      "like": [
+        {
+          "id": 1
+        }
+      ],
+      "category": "бургеры",
+      "weight": "200",
+      "price": "150",
+      "calories": "500",
+      "structure": "котлета, помидор, огурцы, овощной салат",
+      "image": "https://im0-tub-ru.yandex.net/i?id=c7cc634bffe4f53a16bfc8688c95898a&n=13",
+      "id": 3
+    },
+    {
+      "title": "криветки",
+      "commit": [],
+      "like": [
+        {
+          "id": 1
+        }
+      ],
+      "category": "ужин",
+      "weight": "200",
+      "price": "600",
+      "calories": "450",
+      "structure": "криветки, рис, жаренная картошка ",
+      "image": "https://www.seekpng.com/png/full/74-747466_food.png",
+      "id": 4
+    }
+  ]
+}
