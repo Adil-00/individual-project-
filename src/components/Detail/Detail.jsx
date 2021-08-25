@@ -19,6 +19,7 @@ const Detail = () => {
   const history = useHistory();
 
   useEffect(() => {
+    console.log(detail);
     if (detail.commit) {
       if (detail.commit.length > 0) {
         setDishes(true);

@@ -1,6 +1,8 @@
 import axios from "axios";
-import React, { useReducer } from "react";
+import React, { useContext, useEffect, useReducer } from "react";
+import { authContex } from "../Auth/AuthContex";
 import { API } from "../Helpers/constans";
+import { v4 as uuidv4 } from "uuid";
 export const dishesContext = React.createContext();
 
 const INIT_STATE = {
@@ -10,6 +12,7 @@ const INIT_STATE = {
   detail: [],
   order: [],
   like: [],
+  guest: null,
 };
 
 const reducer = (state = INIT_STATE, action) => {
@@ -28,6 +31,8 @@ const reducer = (state = INIT_STATE, action) => {
       return { ...state, order: action.payload };
     case "GET_LIKE_DISHES":
       return { ...state, like: action.payload };
+    case "GUEST":
+      return { ...state, guest: action.payload };
     default:
       return state;
   }
@@ -40,11 +45,11 @@ const DishesContextProvider = ({ children }) => {
     search.set("_limit", 1);
     history.push(`${history.location.pathname}?${search.toString()}`);
 
-    let datat = await axios(`${API}/dishes${window.location.search}`);
+    let data = await axios(`${API}/dishes${window.location.search}`);
 
     dispach({
       type: "GET_DISHES",
-      payload: datat,
+      payload: data,
     });
   };
 
@@ -75,14 +80,45 @@ const DishesContextProvider = ({ children }) => {
     handleGetDishes(history);
   };
 
-  const handleDeatial = async (id) => {
+  const handleDeatial = async (id, history, user) => {
     const { data } = await axios(`${API}/dishes/${id}`);
+
+    if (user.length > 0) {
+      let newArr1 = data.views.filter((item) => item.id === user[0].id);
+
+      if (newArr1.length > 0) {
+      } else {
+        data.views.push({ id: user[0].id });
+        handleSaveEditDishes(data, id, history);
+      }
+    } else {
+      let newArr3 = data.views.filter((item) => item.id === state.guest.id);
+
+      if (newArr3.length > 0) {
+      } else {
+        data.views.push({ id: state.guest.id });
+        handleSaveEditDishes(data, id, history);
+      }
+    }
 
     dispach({
       type: "GET_DETAIL_DISHES",
       payload: data,
     });
   };
+
+  const getGuest = () => {
+    if (!localStorage.getItem("guest")) {
+      localStorage.setItem("guest", JSON.stringify({ id: uuidv4() }));
+    }
+
+    dispach({
+      type: "GUEST",
+      payload: JSON.parse(localStorage.getItem("guest")),
+    });
+  };
+
+  console.log(state.detail);
 
   const handleOrder = async (id) => {
     const { data } = await axios(`${API}/dishes/${id}`);
@@ -140,6 +176,7 @@ const DishesContextProvider = ({ children }) => {
         handleDeatial,
         handleOrder,
         handleLike,
+        getGuest,
       }}
     >
       {children}

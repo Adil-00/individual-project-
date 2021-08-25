@@ -36,13 +36,15 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const DishesList = () => {
-  const { dishes, handleGetDishes, pagination } = useContext(dishesContext);
+  const { dishes, handleGetDishes, pagination, getGuest } =
+    useContext(dishesContext);
   const classes = useStyles();
   const history = useHistory();
   const [page, setPage] = useState(getPage());
   const params = useParams();
   useEffect(() => {
     handleGetDishes(history);
+    getGuest();
   }, []);
 
   useEffect(() => {

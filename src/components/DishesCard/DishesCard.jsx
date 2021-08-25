@@ -15,6 +15,7 @@ import { Link, useHistory } from "react-router-dom";
 import { IconButton } from "@material-ui/core";
 import FavoriteIcon from "@material-ui/icons/Favorite";
 import { authContex } from "../Auth/AuthContex";
+import VisibilityIcon from "@material-ui/icons/Visibility";
 
 const useStyles = makeStyles({
   root: {
@@ -83,7 +84,7 @@ export default function DishesCard({ item }) {
     // <Card className={`${classes.root} card`}>
     <Title options={{ glare: true, "max-glare": 1 }}>
       <Link className={classes.link} to="/detail">
-        <CardActionArea onClick={() => handleDeatial(item.id)}>
+        <CardActionArea onClick={() => handleDeatial(item.id, history, user)}>
           <div
             className={classes.media}
             style={{ background: `url(${item.image}) no-repeat` }}
@@ -124,6 +125,10 @@ export default function DishesCard({ item }) {
           </>
         ) : (
           <>
+            <IconButton>
+              <span>{item.views.length > 0 ? item.views.length : null}</span>
+              <VisibilityIcon />
+            </IconButton>
             <IconButton>
               <Link
                 to="/order"

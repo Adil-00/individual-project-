@@ -17,6 +17,7 @@
     "react-scripts": "4.0.3",
     "react-swipeable-views": "^0.14.0",
     "react-vanilla-tilt": "^1.0.0",
+    "uuid": "^8.3.2",
     "vanilla-tilt": "^1.7.1",
     "web-vitals": "^1.1.2"
   },
